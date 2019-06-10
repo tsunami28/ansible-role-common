@@ -1,0 +1,19 @@
+---
+# tasks\roles.yml
+  
+- name: Install .NET core
+  win_feature:
+    name: NET-Framework-Features, NET-Framework-Core
+    state: present
+    include_sub_features: yes
+    include_management_tools: yes
+- name: Install additional .net feature
+  win_feature:
+    name: NET-WCF-HTTP-Activation45
+    state: present
+- name: Install NFS Client
+  win_feature:
+    name: NFS-Client
+    state: present
+    include_sub_features: yes
+    include_management_tools: yes

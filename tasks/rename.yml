@@ -1,0 +1,10 @@
+---
+# tasks\rename.yml
+  
+- name: Change the hostname to inventory hostname
+  win_hostname:
+    name: "{{inventory_hostname}}"
+  register: res
+- name: Reboot
+  win_reboot:
+  when: res.reboot_required

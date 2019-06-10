@@ -1,0 +1,44 @@
+---
+# tasks\software.yml
+
+- name: Install 7-Zip
+  win_chocolatey:
+    name: 7zip
+    state: present
+- name: Install Chrome
+  win_chocolatey:
+    name: googlechrome
+    ignore_checksums: yes
+    state: present
+- name: Install Firefox
+  win_chocolatey:
+    name: firefox
+    state: present
+- name: Install Foxit Reader
+  win_chocolatey:
+    name: foxitreader
+    state: present
+- name: Install Java
+  win_chocolatey:
+    name: javaruntime
+    state: present
+- name: Install Notepad++
+  win_chocolatey:
+    name: notepadplusplus.install
+    state: present
+- name: Install MtPutty
+  win_chocolatey:
+    name: mtputty
+    state: present
+- name: Install TreeSize Free
+  win_chocolatey:
+    name: treesizefree
+    state: present
+- name: Install WinScp
+  win_chocolatey:
+    name: winscp
+    state: present
+- name: Install Wireshark
+  win_chocolatey:
+    name: wireshark
+    state: present
