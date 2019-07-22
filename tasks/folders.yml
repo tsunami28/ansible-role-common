@@ -11,12 +11,12 @@
     state: directory
 - name: copy scripts resources to target machines
   win_copy:
-    src: files/Scripts
+    src: ./files/Scripts
     dest: C:\
     force: yes
 - name: copy PSTools resources to target machines
   win_copy:
-    src: files/Tools
+    src: ./files/Tools
     dest: C:\
     force: yes
 - name: Ensure that the "C:\Temp" folder is present.
