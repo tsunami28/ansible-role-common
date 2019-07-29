@@ -8,6 +8,7 @@
 - name: Install Chrome
   win_chocolatey:
     name: googlechrome
+    # Issue with pulling latest update / different versions and checksum error
     ignore_checksums: yes
     state: present
 - name: Install Firefox
