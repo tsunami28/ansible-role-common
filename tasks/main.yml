@@ -1,7 +1,7 @@
 ---
 # tasks\main.yml
 
-- include_tasks: rdp.yml
+#- include_tasks: rdp.yml
 - include_tasks: roles.yml
 - include_tasks: folders.yml
 - include_tasks: software.yml
