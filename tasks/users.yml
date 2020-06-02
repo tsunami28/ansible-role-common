@@ -1,0 +1,10 @@
+---
+# tasks\users.yml
+
+- name: set new password for Administrator account
+  win_user:
+    name: "{{local_admin_username}}"
+    password: "{{local_admin_password}}"
+    state: present
+    groups:
+      - Administrators
