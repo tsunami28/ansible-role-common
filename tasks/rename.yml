@@ -4,7 +4,7 @@
 - name: Change the hostname to inventory hostname
   vars:
   win_hostname:
-    name: "{{ hostvars[inventory_hostname].xs_vm_def.hostname }}"
+    name: "{{ host_hostname | default(inventory_hostname) }}"
   register: res
 - name: Reboot
   win_reboot:
