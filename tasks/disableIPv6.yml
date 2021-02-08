@@ -5,5 +5,5 @@
   win_copy:
     src: ../../files/ToDo/DisableIPv6.ps1
     dest: c:\Temp\
-- name: Set properties for network adapters
+- name: Set properties for network adapters - Disable IPv6
   win_shell: c:\temp\DisableIPv6.ps1
