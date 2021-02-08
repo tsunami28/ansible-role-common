@@ -1,0 +1,9 @@
+---
+# tasks\disableIPv6.yml
+
+- name: copy IPv6 script
+  win_copy:
+    src: ../../files/ToDo/DisableIPv6.ps1
+    dest: c:\Temp\
+- name: Set properties for network adapters
+  win_shell: c:\temp\DisableIPv6.ps1

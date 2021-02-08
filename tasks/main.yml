@@ -1,10 +1,10 @@
 ---
 # tasks\main.yml
 
-#- include_tasks: rdp.yml
 - include_tasks: dns.yml
 - include_tasks: roles.yml
 - include_tasks: folders.yml
 - include_tasks: software.yml
 - include_tasks: users.yml
+- include_tasks: disableIPv6.yml
 - include_tasks: rename.yml
